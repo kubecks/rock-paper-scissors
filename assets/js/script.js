@@ -52,6 +52,22 @@ function createComputerChoice() {
     return choices[randomIndex];
 }
 
+// Runs a single round of the game and gives the result
+function playGame(player, computer) {
+    if (player === computer) {
+        drawCount++;
+        return "It's a tie!";
+    } else if ((player === "rock" && computer === "scissors") || 
+               (player === "paper" && computer === "rock") ||
+               (player === "scissors" && computer === "paper")) {
+        playerScore++;
+        return "You win!";
+    } else {
+        computerScore++;
+        return "Computer wins!";
+    }
+}
+
 
 function displayResult() {
 
