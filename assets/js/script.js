@@ -24,6 +24,15 @@ document.getElementById("instructions-button").addEventListener("click", functio
     alert(instructions);
 });
 
+let playerScore = 0;
+let computerScore = 0;
+let drawCount = 0;
+
+document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("game-container").style.display = "block";
+});
+
 
 function createComputerChoice() {
 
