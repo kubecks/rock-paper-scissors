@@ -33,6 +33,17 @@ document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("game-container").style.display = "block";
 });
 
+const choices = document.querySelectorAll(".choice-btn");
+choices.forEach(choice => {
+    choice.addEventListener("click", function() {
+        const playerSelection = this.id;
+        const computerSelection = createComputerChoice();
+        const result = playGame(playerSelection, computerSelection);
+        displayResult(result, playerSelection, computerSelection);
+        updateScore(result);
+    });
+});
+
 
 function createComputerChoice() {
 
