@@ -77,8 +77,14 @@ function displayResult(result, player, computer) {
 }
 
 
+// Updates the score and draw tally
 function updateScore(result) {
-
+    const playerScoreElement = document.getElementById("player-score");
+    const computerScoreElement = document.getElementById("computer-score");
+    const drawCountElement = document.getElementById("draw-count");
+    playerScoreElement.textContent = `Player: ${playerScore}`;
+    computerScoreElement.textContent = `Computer: ${computerScore}`;
+    drawCountElement.textContent = `Draws: ${drawCount}`;
 }
 
 
