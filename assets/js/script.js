@@ -69,9 +69,13 @@ function playGame(player, computer) {
 }
 
 
-function displayResult() {
-
+// Displays the result of the game round
+function displayResult(result, player, computer) {
+    const resultElement = document.getElementById("result");
+    resultElement.style.display = "block";
+    resultElement.textContent = `${result} You chose ${player}. Computer chose ${computer}.`;
 }
+
 
 function updateScore(result) {
 
