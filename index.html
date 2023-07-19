@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>R,P,S</h1>
+    <h1 id="game-title">R,P,S</h1>
     <div id="menu">
         <button id="start-button">Start</button>
         <button id="instructions-button">Instructions</button>
@@ -20,11 +20,17 @@
     <div id="game-container" style="display: none;">
         <h2>Make your choice:</h2>
         <div id="choices">
-            <button class="choice-btn" id="rock">Rock</button>
-            <button class="choice-btn" id="paper">Paper</button>
-            <button class="choice-btn" id="scissors">Scissors</button>
+            <button class="choice-btn" id="rock">👊</button>
+            <button class="choice-btn" id="paper">✋</button>
+            <button class="choice-btn" id="scissors">✌️</button>
         </div>
         <div id="result" style="display: none;"></div>
+        <div>
+            <span id="player-score">Player: 0</span>
+            <span id="computer-score">Computer: 0</span>
+            <span id="draw-count">Draws: 0</span>
+        </div>
+        
     </div>
     <script src="assets/js/script.js"></script>
 </body>
