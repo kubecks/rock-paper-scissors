@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>R,P,S</h1>
+    <div id="menu">
+        <button id="start-button">Start</button>
+        <button id="instructions-button">Instructions</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <h2>Make your choice:</h2>
+        <div id="choices">
+            <button class="choice-btn" id="rock">Rock</button>
+            <button class="choice-btn" id="paper">Paper</button>
+            <button class="choice-btn" id="scissors">Scissors</button>
+        </div>
+        <div id="result" style="display: none;"></div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
