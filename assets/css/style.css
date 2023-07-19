@@ -1,7 +1,6 @@
 
 /* styles.css */
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,6 @@ body {
     background-color: #f0f0f0;
     font-family: 'Bangers', cursive;
 }
-
 
 h1 {
     text-align: center;
