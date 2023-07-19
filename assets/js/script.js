@@ -45,9 +45,13 @@ choices.forEach(choice => {
 });
 
 
+// Creates a random choice for computer
 function createComputerChoice() {
-
+    const choices = ["rock", "paper", "scissors"];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
 }
+
 
 function displayResult() {
 
