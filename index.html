@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content=" A simplistic Rock, Paper or Scissors game vs Computer. Keeps track of the score tally" />
+  <meta name="keywords"
+    content="rock, paper, scissors, game, challenge, strategy,  fun" />
+  <meta name="author" content="Romeo Kubeka" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +16,30 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
     <h1 id="game-title">R,P,S</h1>
+</header>
+    
+<main>
     <div id="menu">
         <button id="start-button">Start</button>
         <button id="instructions-button">Instructions</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal-button" class="close">&times;</span>
+            <h2>How to Play:</h2>
+            <p>1. Pick between rock, paper, or scissors.</p>
+            <p>2. The computer will also choose from one of the options.</p>
+            <p>3. Determine the winner based on the rules:</p>
+            <ul>
+                <li>Rock beats scissors.</li>
+                <li>Paper beats rock.</li>
+                <li>Scissors beat paper.</li>
+            </ul>
+            <p>4. Keep track of your wins and losses.</p>
+        </div>
     </div>
 
     <div id="game-container" style="display: none;">
@@ -30,8 +55,19 @@
             <span id="computer-score">Computer: 0</span>
             <span id="draw-count">Draws: 0</span>
         </div>
-        
     </div>
+
+    <!-- Game winner message -->
+    <div id="winner-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-winner-modal">&times;</span>
+            <p id="winner-message"></p>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
