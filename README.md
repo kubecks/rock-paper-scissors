@@ -60,10 +60,6 @@ Welcome to the Rock, Paper, Scissors game, a digital recreation of the classic h
 [options](assets/Images/img2.png)
 
 
-## Demo
-
-![Game Demo](demo.gif)
-
 ## Technologies Used
 
 The game is built using the following technologies:
