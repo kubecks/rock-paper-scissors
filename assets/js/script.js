@@ -33,19 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
         menuElement.style.display = "block";
         gameContainerElement.style.display = "block";
       });
-    // document.getElementById("game-title").addEventListener("click", toggleGameContainer);
+    // Event listener for "Quit" button
     quitButton.addEventListener("click", function() {
         quitButton.classList.add("hidden");
         startButton.style.display = "block";
         menuElement.style.display = "block";
         gameContainerElement.style.display = "none";
       });
-    // Event listener for game title (logo)
-    document.getElementById("game-title").addEventListener("click", function() {
-        // Hide the game container and show the menu
-        gameContainerElement.style.display = "none";
-        menuElement.style.display = "block";
-    });
+    
     // Event listener for "Instructions" button
     instructionsButton.addEventListener("click", function() {
         showModal("modal");
