@@ -64,7 +64,7 @@ button {
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
-    background-color: #3EA0DD; /* Light blue */
+    background-color: #3EA0DD; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -72,19 +72,19 @@ button {
 }
 
 button:hover {
-    background-color: #5AB9F5; /* Slightly darker shade of blue on hover */
+    background-color: #5AB9F5; 
 }
 
 button:focus {
     outline: none;
-    background-color: #1C73B8; /* Darker shade of blue when focused */
+    background-color: #1C73B8; 
 }
 
 /* Styles for choice buttons */
 #choices {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Add some margin for spacing */
+    margin-top: 20px; 
 }
 
 .choice-btn {
@@ -92,14 +92,14 @@ button:focus {
     margin: 10px;
     font-size: 30px;
     justify-content: center;
-    background-color: #3EA0DD; /* Light blue */
+    background-color: #3EA0DD; 
     border: none;
     cursor: pointer;
-    transition: transform 0.3s; /* Add transition property for smooth effect */
+    transition: transform 0.3s; 
 }
 
 .choice-btn:hover {
-    transform: scale(1.2); /* Increase size on hover (you can adjust the value) */
+    transform: scale(1.2); /* Increases size on hover */
 }
 
 .choice-btn:focus {
@@ -129,8 +129,8 @@ button:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 80%;
     max-width: 500px;
-    font-family: 'Arial', sans-serif; /* Change font for the modal content */
-    line-height: 1.6; /* Improve line spacing */
+    font-family: 'Arial', sans-serif; /* Changes font for the modal content */
+    line-height: 1.6; 
 }
 
 .close {
@@ -152,13 +152,12 @@ button:focus {
 
 /* Add styles for the winner modal */
 #modal-content-winner {
-    background-color: #C3E88D; /* Light green */
-    color: #333;
+    
     text-align: center;
 }
 
 .close-modal {
-    color: #777;
+    
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -169,3 +168,63 @@ button:focus {
 .close-modal:focus {
     color: #999;
 }
+
+
+/* Add media query for devices with a maximum width of 768px i.e. Tablets */
+@media only screen and (max-width: 768px) {
+    
+    body {
+      font-size: 16px; /* Decreased the font size for better readability */
+    }
+  
+    /* Adjust header styles for smaller screens */
+    #logo {
+        width: 100px;
+    }
+  
+    /* Adjust button styles for smaller screens */
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  
+    /* Adjust choice button styles for smaller screens */
+    .choice-btn {
+      font-size: 24px;
+    }
+  
+    /* Adjust modal styles for smaller screens */
+    .modal-content {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+  }
+  
+  /* Add media query for devices with a maximum width of 480px i.e. smartphones */
+  @media only screen and (max-width: 480px) {
+    
+    body {
+      font-size: 14px; 
+    }
+  
+    #logo {
+        width: 80px;
+    }
+  
+    button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .choice-btn {
+      font-size: 20px;
+    }
+  
+    .modal-content {
+      width: 95%;
+      max-width: 320px;
+    }
+  
+  }
+  
