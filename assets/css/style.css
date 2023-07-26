@@ -43,6 +43,18 @@ h1 {
     min-height: 200px;
 }
 
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    color: #fff; 
+    height: 60px; 
+}
+
+
+
 /* Game container styles */
 #game-container {
     display: none;
